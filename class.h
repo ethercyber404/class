@@ -7,7 +7,7 @@ int insert_last(int ar[],int ln)             //class.c-(FST2L.C)        1
     printf("%d added successfully\n",item);
     return  ln + 1;
 }
-int insert_specific(int ar[],int ln,int pos)                          //2
+int insert_specific(int ar[],int ln,int pos)                           //2
 {
     int item;
     printf("\nEnter the number : ");
@@ -19,14 +19,14 @@ int insert_specific(int ar[],int ln,int pos)                          //2
     printf("%d added in %d position\n",item,pos);
     return ln + 1;
 }
-int delete_last(int ar[],int ln,int pos)                              //3
+int delete_last(int ar[],int ln,int pos)                               //3
 {
     int deleted_item = ar[ln - 1];
     printf("  %d\n",deleted_item);
     printf("%d is Deleted from %d position\n",deleted_item,pos - 1);
     return ln - 1;
 }
-int delete_spesific(int ar[],int ln,int pos)                          //4
+int delete_spesific(int ar[],int ln,int pos)                           //4
 {
     int deleted_item = ar[pos];
     scanf("%d",&pos);
@@ -37,7 +37,7 @@ int delete_spesific(int ar[],int ln,int pos)                          //4
     printf("\n%d is Successfully deleted from %d position",deleted_item,pos);
     return ln - 1;
 }
-void travarsing_array(int ar[],int start,int end)                     //5
+void travarsing_array(int ar[],int start,int end)                      //5
 {
     printf("Enter the Start : ");
     scanf("%d",&start);
@@ -49,7 +49,7 @@ void travarsing_array(int ar[],int start,int end)                     //5
     printf("\nhere .......  : %d\n ",ar[i]);
     }
 }
-void linear_scarch(int ar[],int ln)                                  //6
+void linear_scarch(int ar[],int ln)                                    //6
 {
     int item;
     printf("\nEnter the item to be scarch : ");
@@ -59,7 +59,7 @@ void linear_scarch(int ar[],int ln)                                  //6
     printf("Item found  : %d\n ",ar[i]);
     }}
 } 
-void asc(int ar[],int ln)                                             //7
+void asc(int ar[],int ln)                                              //7.1
 {
     int temp;
     for (int i = 0; i < ln; i++){
@@ -72,7 +72,7 @@ void asc(int ar[],int ln)                                             //7
         }
     }
 }
-void dsc(int ar[],int ln)                                               //7
+void dsc(int ar[],int ln)                                              //7.2
 {
     int temp;
     for (int i = 0; i < ln; i++){
@@ -85,7 +85,7 @@ void dsc(int ar[],int ln)                                               //7
         }
     }
 }
-void display_array(int ar[],int ln)                                   //9
+void display_array(int ar[],int ln)                                    //9
 {
     for (int i = 0; i < ln; i++){
     printf("  %d ",ar[i]);
