@@ -1,0 +1,19 @@
+//9. Create two struct variables, Node1 and Node2. Use a single pointer to point to Node1, print its data, then move the pointer to Node2 and print its data.
+
+#include <stdio.h>
+
+struct node {
+    int a;
+};
+int main() {
+    struct node node2,node1;
+    node2.a = 5;
+    node1.a = 6;
+    struct node *b;  
+    b = &node2;
+    printf("Pointing to Node2 : %d\n",b->a);
+    b = &node1;
+    printf("Pointing to Node1 : %d",b->a);
+
+    return 0;
+}
