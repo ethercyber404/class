@@ -1,0 +1,25 @@
+//5. Define a struct Rectangle with length and width. Pass the struct to a function that returns the calculated area.
+
+#include <stdio.h>
+
+    struct Rectangle {
+    int ln,wd,area;
+};
+    int Area(struct Rectangle n1) {
+    return n1.ln * n1.wd;
+}
+int main()  {
+    int area;
+    struct Rectangle n2;
+
+    printf("Enter length : ");
+    scanf("%d",&n2.ln);
+
+    printf("Enter width : ");
+    scanf("%d",&n2.wd);
+    area = Area(n2);
+
+    printf("Area of rectangle : %d",area);
+
+    return 0;
+}
