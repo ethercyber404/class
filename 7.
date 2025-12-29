@@ -1,0 +1,16 @@
+//7. Create a function that takes a pointer to a struct and increments one of its integer members by 10.
+#include <stdio.h>
+struct num {
+    int n;
+};
+void add(struct num *d){ 
+    d->n = d->n + 10;  
+}
+int main() {
+    struct num x;
+    x.n = 15;
+    add(&x);   
+    printf("Value : %d\n",x.n);
+
+    return 0;
+}
