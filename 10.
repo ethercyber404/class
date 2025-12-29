@@ -1,0 +1,17 @@
+//10. Define a node struct with a next pointer. Create two variables, first and second. Manually set first.next = &second; and print second.data using first.next->data
+
+#include <stdio.h>
+struct node{
+    int data;
+    struct node *next; 
+};
+int main()
+{
+    struct node first,second;
+    first.data  = 5;
+    second.data = 6;
+    first.next = &second;
+    printf("Second node data: %d\n",first.next->data);
+
+    return 0;
+}
