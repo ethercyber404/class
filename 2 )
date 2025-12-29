@@ -1,0 +1,24 @@
+//2. Create a struct Point with x and y. Ask the user for input and calculate the distance from the origin (0,0).
+
+#include <stdio.h>
+#include <math.h> 
+
+int main() {
+
+    struct dis {
+    float x,y,distance;
+    };
+    struct dis a;
+
+    printf("Enter the value of x : ");
+    scanf("%f", &a.x);
+
+    printf("Enter the value of y : ");
+    scanf("%f", &a.y);
+
+    a.distance = sqrt((a.x * a.x)+(a.y * a.y));
+
+    printf("The distance will be: %.2f",a.distance);
+
+    return 0;
+}
