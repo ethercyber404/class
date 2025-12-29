@@ -2,21 +2,18 @@
 
 #include <stdio.h>
 #include <math.h> 
-
 int main() {
 
     struct dis {
     float x,y,distance;
     };
     struct dis a;
-
     printf("Enter the value of x : ");
-    scanf("%f", &a.x);
+    scanf("%f",&a.x);
 
     printf("Enter the value of y : ");
-    scanf("%f", &a.y);
-
-    a.distance = sqrt((a.x * a.x)+(a.y * a.y));
+    scanf("%f",&a.y);
+    a.distance = sqrt((a.x*a.x)+(a.y*a.y));
 
     printf("The distance will be: %.2f",a.distance);
 
