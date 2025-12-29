@@ -1,0 +1,16 @@
+//8. The NULL Pointer: Create a struct pointer and initialize it to NULL.
+
+#include <stdio.h>
+
+struct ele {
+    int n;
+    char count[20];
+};
+int main() {
+    struct ele *d = NULL;  
+    if (d == NULL){
+        printf("NULL\n");
+    }
+
+    return 0;
+}
