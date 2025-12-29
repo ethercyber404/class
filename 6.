@@ -1,0 +1,26 @@
+//6. Create a struct Time (hours, minutes). Write a program that adds two Time variables (e.g., 1h 40m + 0h 30m = 2h 10m).
+
+#include <stdio.h>
+
+struct Time {
+    int hour;
+    int min;
+};
+int main() {
+    struct Time start,end,sum;
+
+    scanf("%d %d %d %d",&start.hour,&start.min,&end.hour,&end.min);
+    sum.min = start.min + end.min;
+    sum.hour = start.hour + end.hour;
+
+    if (sum.min >= 60){
+        sum.hour = sum.hour+1;
+        sum.min = sum.min-60;
+    }
+    if (sum.hour >= 24){
+        sum.hour = sum.hour-24;
+    }
+    printf("%d hour and %d minutes\n",sum.hour,sum.min);
+
+    return 0;
+}
