@@ -1,0 +1,21 @@
+//3. Create a struct variable and a pointer to that variable. Access members using both the . operator and the -> operator.
+
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+
+    struct St {
+    int id;
+    float cg;
+    };
+    struct St st_1;     
+    struct St *loc; 
+
+    st_1.id = 48;
+    st_1.cg = 3.29;
+
+    loc = &st_1;   
+    printf("ID : %d\nCGPA : %.2f",loc->id,loc->cg);
+
+    return 0;
+}
