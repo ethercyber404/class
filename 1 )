@@ -1,0 +1,21 @@
+//1. Define a struct Student with id (int) and cgpa (float). Create one variable, assign values, and print them.
+
+#include <stdio.h>                 
+#include <stdlib.h>
+
+int main() 
+{
+    struct st 
+    {
+        int id;
+        float cg;
+    };
+
+    struct st st_1;
+    st_1.id = 48;
+    st_1.cg = 3.29;
+
+    printf("Student ID : %d\nCGPA : %.2f",st_1.id,st_1.cg);
+
+    return 0;
+}
