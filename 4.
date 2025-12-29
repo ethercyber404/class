@@ -1,0 +1,30 @@
+//4. Create an array of 3 Product structs (name, price). Use a loop to calculate the total price of all products.
+
+#include <stdio.h>
+int main(){
+
+    struct Product {
+    char   name[100];
+    float  price;
+    };
+    struct Product no[100];
+    float  sum = 0;
+    int    i;
+
+    for (i = 1;i <= 3;i++) {
+        printf("Enter product no.%d name : ",i);
+        scanf("%s",no[i].name);
+        printf("Enter product no.%d price : ",i);
+        scanf("%f",&no[i].price);
+    }
+    for (i = 1; i <= 3; i++) {
+        sum = sum + no[i].price;
+    }
+    printf("\n    product name\n");
+    for (i = 1;i <= 3;i++) {
+    printf("%s : %.2f\n",no[i].name,no[i].price);
+    }
+    printf("\nTotal Price of all products : %.2f\n",sum);
+
+    return 0;
+}
